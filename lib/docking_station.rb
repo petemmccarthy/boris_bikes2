@@ -12,11 +12,14 @@ class DockingStation
   end
 
   def dock(bike)
-    raise "No space available" if full?
     bikes << bike
   end
 
+  def empty?
+    bikes.empty?
   end
+
+end
 
 
 
