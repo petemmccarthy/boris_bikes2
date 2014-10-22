@@ -24,7 +24,7 @@ describe 'user' do
   it 'can rent a bike from a docking station' do
     old_street = DockingStation.new
     old_street.dock(bike)
-    expect(user.has_bike?).to eq true
+    expect(user.has_bike?).to eq false
     user.rent_bike_from(old_street)
     expect(user.has_bike?).to eq true
   end
