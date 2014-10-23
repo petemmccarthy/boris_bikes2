@@ -1,7 +1,7 @@
 require 'docking_station'
 require 'bike'
 
-describe DockingStation do
+describe BikeContainer do
 
   let(:old_street)  { DockingStation.new(:capacity => 10) }
   let(:bike)        { Bike.new }
