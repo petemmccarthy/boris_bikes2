@@ -3,7 +3,7 @@ module BikeContainer
   DEFAULT_CAPACITY = 10
 
   def bikes
-    @bikes
+    @bikes ||= bikes
   end
 
   def dock(bike)
@@ -25,7 +25,11 @@ module BikeContainer
   end
 
   def capacity
-    @capacity
+    @capacity ||= DEFAULT_CAPACITY
+  end
+
+  def capacity=(value)
+    @capacity = value
   end
 
   def full?
