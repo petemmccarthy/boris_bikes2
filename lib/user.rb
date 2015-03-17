@@ -13,8 +13,7 @@ class User
   end
 
   def rent_bike_from(docking_station)
-    # @bike = docking_station.release(@bike)
-    available_bikes
+    @bike = docking_station.release(@bike)
   end
 
 end

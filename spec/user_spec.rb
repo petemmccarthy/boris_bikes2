@@ -30,9 +30,9 @@ describe 'user' do
   end
 
   it 'can return a bike' do
-    # old_street = DockingStation.new
-    # user.return_bike_to(old_street)
-    # expect(bikey).not_to have_bike
+    old_street = DockingStation.new
+    user.return_bike_to(old_street)
+    expect(bikey).not_to have_bike
   end
 
   
